@@ -9,9 +9,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CoreModule } from './core/core.module';
 import { CarModule } from './car/car.module';
 import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, HomeComponent],
   imports: [
     MatToolbarModule,
     BrowserModule,
