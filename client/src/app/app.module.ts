@@ -1,25 +1,25 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { MatToolbarModule } from '@angular/material/toolbar';
+import { NgModule } from "@angular/core";
+import { BrowserModule } from "@angular/platform-browser";
+import { MatToolbarModule } from "@angular/material/toolbar";
 
-import { MatCardModule } from '@angular/material/card';
+import { MatCardModule } from "@angular/material/card";
 
-import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { CoreModule } from './core/core.module';
-import { CarModule } from './car/car.module';
-import { AppRoutingModule } from './app-routing.module';
-import { HomeComponent } from './home/home.component';
+import { AppComponent } from "./app.component";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { CoreModule } from "./core/core.module";
+import { BlogModule } from "./blog/blog.module";
+import { AppRoutingModule } from "./app-routing.module";
+import { HomeComponent } from "./blog/home/home.component";
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent],
+  declarations: [AppComponent],
   imports: [
     MatToolbarModule,
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     CoreModule,
-    CarModule,
+    BlogModule,
     MatCardModule,
   ],
   providers: [],
